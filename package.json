@@ -1,0 +1,35 @@
+{
+  "name": "template-node",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/uiolee/template-node",
+  "bugs": {
+    "url": "https://github.com/uiolee/template-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uiolee/template-node.git"
+  },
+  "license": "MPL-2.0",
+  "author": "uiolee (https://github.com/uiolee)",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "sort": "pnpm dlx sort-package-json",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters=html text",
+    "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0"
+  }
+}
